@@ -1,7 +1,7 @@
 # GamingServiceEoP5
 PoC for LPE bug in xbox gaming service
 
-When service is started and user logs in gamingservice will spawn a xgamehelper.exe and will leak privileged process handle into the new process 
+When service is started and user logs in gamingservice will spawn a xgamehelper.exe process in context of low privilege user and will leak privileged process handle into the new process.
 ![2](https://github.com/Wh04m1001/GamingServiceEoP5/assets/44291883/dfcfc1a2-6086-4f77-95dd-3c66fc4e9e0f)
 As this bug can be abused only after reboot COM hijacking is performed to inject dll in xgamehelper process
 
